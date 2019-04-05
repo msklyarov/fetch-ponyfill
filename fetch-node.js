@@ -1,6 +1,6 @@
 'use strict';
 
-var fetch = require('node-fetch');
+var fetch = require('socks5-node-fetch')();
 
 function wrapFetchForNode(fetch) {
   // Support schemaless URIs on the server for parity with the browser.
